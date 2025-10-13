@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="txtShow"> 電話號碼:</string>
+</resources>
