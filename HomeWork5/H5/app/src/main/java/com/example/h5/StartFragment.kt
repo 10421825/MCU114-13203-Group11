@@ -1,0 +1,37 @@
+package com.example.h5
+
+import androidx.fragment.app.viewModels
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Button
+import androidx.fragment.app.activityViewModels
+
+class StartFragment : Fragment() {
+
+    companion object {
+        fun newInstance() = StartFragment()
+    }
+
+    private val vm: WorkViewModel by activityViewModels()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        // TODO: Use the ViewModel
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        return inflater.inflate(R.layout.fragment_start, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        view.findViewById<Button>(R.id.btnStart).setOnClickListener { vm.start() }
+        view.findViewById<Button>(R.id.btnCancel).setOnClickListener { vm.cancel() }
+    }
+}
