@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "HomeWork4"
 include(":app")
-#
