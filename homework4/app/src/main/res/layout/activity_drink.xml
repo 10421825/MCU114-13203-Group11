@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DrinkActivity">
+
+        <RadioGroup
+            android:id="@+id/radioGroupDrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/radioCola"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cola" />
+
+            <RadioButton
+                android:id="@+id/radioTea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iced Tea" />
+
+            <RadioButton
+                android:id="@+id/radioWater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Water" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            app:layout_constraintTop_toBottomOf="@id/radioGroupDrink"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

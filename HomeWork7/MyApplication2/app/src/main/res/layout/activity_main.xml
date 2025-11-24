@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Google Map -->
+    <fragment
+        android:id="@+id/map_fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Top buttons -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="#80FFFFFF">
+
+        <Button
+            android:id="@+id/btnDrive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="開車" />
+
+        <Button
+            android:id="@+id/btnWalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="走路"
+            android:layout_marginStart="12dp" />
+
+        <Button
+            android:id="@+id/btnBike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="單車"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+</FrameLayout>
